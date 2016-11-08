@@ -50,6 +50,7 @@ class test_UniProt(UniProt):
     @attr('skip')
     def test_get_df(self):
         df = self.get_df(["P43403"])
+        df = self.get_df(["L2LWX2"])
 
     def test_fasta(self):
         "Q9Y617" in self.get_fasta(["Q9Y617-1"])
